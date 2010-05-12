@@ -1,0 +1,27 @@
+# Change to user if javascript is used
+plugin.tx_sfivwpixel_pi1 = USER_INT
+plugin.tx_sfivwpixel_pi1 {
+	includeLibs = EXT:sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php
+	userFunc = tx_sfivwpixel_pi1->main
+
+	templatePath = EXT:sf_ivwpixel/Resources/Private/Templates/
+
+	# possible values image/javascript
+	output = image
+
+	#<img src="http://[angebotskennung].ivwbox.de/cgi-bin/ivw/type/code;comment?r=referrer&d=random">
+	supplyidentifier = angebotskennung
+
+	default {
+		# possible values CP / NP
+		type = CP
+
+		# max 12 character / ; or äöüß are not allowed
+		code =
+
+		comment =
+	}
+}
+
+# insert directly as first child into body
+page.1 < plugin.tx_sfivwpixel_pi1

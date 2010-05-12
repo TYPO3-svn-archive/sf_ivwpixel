@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for database tables/fields belonging to extension 'sf_ivwpixel'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="pages.tx_sfivwpixel_div">IVW Pixel</label>
+			<label index="tt_news.tx_sfivwpixel_div">IVW Pixel</label>
+			<label index="pages.tx_sfivwpixel_type.I.0">Content-pixel</label>
+			<label index="pages.tx_sfivwpixel_type.I.1">Newsletter pixel</label>
+			<label index="pages.tx_sfivwpixel_type">IVW Pixel Type</label>
+			<label index="pages.tx_sfivwpixel_code">IVW Code</label>
+			<label index="pages.tx_sfivwpixel_comment">IVW comment for an individual analysis</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="pages.tx_sfivwpixel_div">IVW Pixel</label>
+			<label index="tt_news.tx_sfivwpixel_div">IVW Pixel</label>
+			<label index="pages.tx_sfivwpixel_type.I.0">Inhalts-Pixel (Seite)</label>
+			<label index="pages.tx_sfivwpixel_type.I.1">Newsletter-Pixel</label>
+			<label index="pages.tx_sfivwpixel_type">IVW Pixel Typ</label>
+			<label index="pages.tx_sfivwpixel_code">IVW Code</label>
+			<label index="pages.tx_sfivwpixel_comment">IVW Kommentar für individuelle Auswertung</label>
+		</languageKey>
+	</data>
+</T3locallang>
