@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<T3locallang>
+	<meta type="array">
+		<type>database</type>
+		<description>Language labels for the typoscript constants editor for 'sf_ivwpixel'</description>
+	</meta>
+	<data type="array">
+		<languageKey index="default" type="array">
+			<label index="templatepath">Templatepath</label>
+			<label index="output">Output type</label>
+			<label index="supplyidentifier">ID provided by IVW on registration</label>
+			<label index="default_type">Type defining what type of content gets countent</label>
+			<label index="default_code">Code for certain sections</label>
+			<label index="default_comment">Comments field</label>
+		</languageKey>
+		<languageKey index="de" type="array">
+			<label index="templatepath">Templatepath</label>
+			<label index="output">Ausgabeformat</label>
+			<label index="supplyidentifier">Von IVW während der Registrierung zugeteilte ID</label>
+			<label index="default_type">Typ der definiert welche Art Inhalt gezählt wird</label>
+			<label index="default_code">Code für den jeweiligen Bereich</label>
+			<label index="default_comment">Kommentarfeld</label>
+		</languageKey>
+	</data>
+</T3locallang>

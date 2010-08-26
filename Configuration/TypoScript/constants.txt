@@ -1,0 +1,19 @@
+plugin.sf_ivwpixel {
+	# cat=sf_ivwpixel/file/10; type=text; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:templatepath
+	templatePath = EXT:sf_ivwpixel/Resources/Private/Templates/
+
+	# cat=sf_ivwpixel//10; type=options[javascript,image]; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:output
+	output = javascript
+
+	# cat=sf_ivwpixel//20; type=text; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:supplyidentifier
+	supplyidentifier = angebotskennung
+
+	# cat=sf_ivwpixel/default/30; type=options[CP,NP]; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:default_type
+	default.type = CP
+
+	# cat=sf_ivwpixel/default/40; type=text; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:default_code
+	default.code =
+
+	# cat=sf_ivwpixel/default/50; type=text; label= LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tsce.xml:default_comment
+	default.comment =
+}

@@ -4,22 +4,22 @@ plugin.tx_sfivwpixel_pi1 {
 	includeLibs = EXT:sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php
 	userFunc = tx_sfivwpixel_pi1->main
 
-	templatePath = EXT:sf_ivwpixel/Resources/Private/Templates/
+	templatePath = {$plugin.sf_ivwpixel.templatePath}
 
 	# possible values image/javascript
-	output = javascript
+	output = {$plugin.sf_ivwpixel.output}
 
 	#<img src="http://[angebotskennung].ivwbox.de/cgi-bin/ivw/type/code;comment?r=referrer&d=random">
-	supplyidentifier = angebotskennung
+	supplyidentifier = {$plugin.sf_ivwpixel.supplyidentifier}
 
 	default {
 		# possible values CP / NP
-		type = CP
+		type = {$plugin.sf_ivwpixel.default.type}
 
 		# max 12 character / ; or äöüß are not allowed
-		code =
+		code = {$plugin.sf_ivwpixel.default.code}
 
-		comment =
+		comment = {$plugin.sf_ivwpixel.default.comment}
 	}
 }
 
