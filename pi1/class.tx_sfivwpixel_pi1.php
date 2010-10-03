@@ -63,7 +63,8 @@ class tx_sfivwpixel_pi1 {
 			}
 		}
 
-		return $this->render($ivwValues);
+		$content = $this->render($ivwValues);
+		return $content;
 	}
 
 	/**
