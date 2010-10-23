@@ -39,14 +39,22 @@ $tempColumns = Array (
 
 t3lib_div::loadTCA('pages');
 t3lib_extMgm::addTCAcolumns('pages', $tempColumns, 1);
-t3lib_extMgm::addToAllTCAtypes('pages', '--div--;LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tca.xml:pages.tx_sfivwpixel_div, tx_sfivwpixel_type;;;;1-1-1, tx_sfivwpixel_code, tx_sfivwpixel_comment');
+t3lib_extMgm::addToAllTCAtypes(
+	'pages',
+	'--div--;LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tca.xml:pages.tx_sfivwpixel_div,
+		tx_sfivwpixel_type;;;;1-1-1, tx_sfivwpixel_code, tx_sfivwpixel_comment'
+);
 
 t3lib_div::loadTCA('tt_news');
 t3lib_extMgm::addTCAcolumns('tt_news', $tempColumns, 1);
-t3lib_extMgm::addToAllTCAtypes('tt_news', '--div--;LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tca.xml:tt_news.tx_sfivwpixel_div, tx_sfivwpixel_type;;;;1-1-1, tx_sfivwpixel_code, tx_sfivwpixel_comment');
+t3lib_extMgm::addToAllTCAtypes(
+	'tt_news',
+	'--div--;LLL:EXT:sf_ivwpixel/Resources/Private/Language/locallang_tca.xml:tt_news.tx_sfivwpixel_div,
+		tx_sfivwpixel_type;;;;1-1-1, tx_sfivwpixel_code, tx_sfivwpixel_comment'
+);
 
 
 
-t3lib_extMgm::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'IVW Pixel');
+t3lib_extMgm::addStaticFile('sf_ivwpixel', 'Configuration/TypoScript/', 'IVW Pixel');
 
 ?>

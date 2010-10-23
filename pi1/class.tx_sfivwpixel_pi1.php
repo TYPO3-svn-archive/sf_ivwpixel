@@ -36,13 +36,13 @@ class tx_sfivwpixel_pi1 {
 	/**
 	 * @var	boolean
 	 */
-	protected $isNewsDetailPage = false;
+	protected $isNewsDetailPage = FALSE;
 
 	/**
 	 * Main method called for outputting the pixel on page
 	 *
-	 * @param	string
-	 * @param	array
+	 * @param	string	$content	takes the content from typoscript
+	 * @param	array	$conf	configurations from typoscript
 	 * @return	string
 	 */
 	public function main($content, $conf) {
@@ -70,7 +70,7 @@ class tx_sfivwpixel_pi1 {
 	/**
 	 * Initialize some values for this class
 	 *
-	 * @param	array
+	 * @param	array	$settings	settings for this extension
 	 * @return	void
 	 */
 	protected function init($settings) {
@@ -78,7 +78,7 @@ class tx_sfivwpixel_pi1 {
 
 		$newsParam = t3lib_div::_GP('tx_ttnews');
 		if (intval($newsParam['tt_news'])) {
-			$this->isNewsDetailPage = true;
+			$this->isNewsDetailPage = TRUE;
 			$this->settings['newsUid'] = intval($newsParam['tt_news']);
 		}
 	}
@@ -103,6 +103,7 @@ class tx_sfivwpixel_pi1 {
 	/**
 	 * Fetch ivw values from page recursive
 	 *
+	 * @param	integer	$uid	uid of the page to fetch
 	 * @return	array
 	 */
 	protected function fetchPageData($uid) {
@@ -133,7 +134,7 @@ class tx_sfivwpixel_pi1 {
 	 * Fetch template put marker together and replace them in the template before
 	 * output
 	 *
-	 * @param	array
+	 * @param	array	$data	data to render
 	 * @return	string
 	 */
 	protected function render($data) {
@@ -144,7 +145,7 @@ class tx_sfivwpixel_pi1 {
 			'type' => $data['type'],
 			'code' => $data['code'],
 			'comment' => $data['comment'],
-			'referrer' => $_SERVER["HTTP_REFERER"],
+			'referrer' => $_SERVER['HTTP_REFERER'],
 			'random' => mt_rand(),
 		);
 
@@ -152,8 +153,8 @@ class tx_sfivwpixel_pi1 {
 			$template,
 			$markerArray,
 			'###|###',
-			true,
-			true
+			TRUE,
+			TRUE
 		);
 	}
 
@@ -173,8 +174,8 @@ class tx_sfivwpixel_pi1 {
 	}
 }
 
-if (defined('TYPO3_MODE') && $TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php']) {
-	include_once($TYPO3_CONF_VARS[TYPO3_MODE]['XCLASS']['ext/sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php']);
+if (defined('TYPO3_MODE') && $GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php']) {
+	require_once($GLOBALS['TYPO3_CONF_VARS'][TYPO3_MODE]['XCLASS']['ext/sf_ivwpixel/pi1/class.tx_sfivwpixel_pi1.php']);
 }
 
 ?>
